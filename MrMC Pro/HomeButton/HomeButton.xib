@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="15705" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="TVUIKit controls" minToolsVersion="10.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeButton" id="Rz2-K0-ksD" customClass="HomeButton">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="243"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tvPosterView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="Title" translatesAutoresizingMaskIntoConstraints="NO" id="PxN-Fp-pSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="243"/>
+                        <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tvPosterView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojs-ho-I6c">
+                        <rect key="frame" x="130" y="57" width="90" height="90"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PxN-Fp-pSZ" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" id="EMy-Jg-dix"/>
+                <constraint firstAttribute="bottom" secondItem="PxN-Fp-pSZ" secondAttribute="bottom" id="HEd-HD-Cnm"/>
+                <constraint firstAttribute="trailing" secondItem="PxN-Fp-pSZ" secondAttribute="trailing" id="MC4-Tf-9nI"/>
+                <constraint firstItem="PxN-Fp-pSZ" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="jyi-zU-oLZ"/>
+            </constraints>
+            <size key="customSize" width="221" height="194"/>
+            <connections>
+                <outlet property="homeItem" destination="PxN-Fp-pSZ" id="xkW-4G-zOG"/>
+                <outlet property="homeItemCategoryImage" destination="ojs-ho-I6c" id="GBD-NN-xig"/>
+            </connections>
+            <point key="canvasLocation" x="154" y="-67.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
